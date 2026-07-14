@@ -18,7 +18,7 @@ public class TC005_PickSlipPrint extends ProjectSpecificMethods {
 	}
 
 	@Test(dataProvider = "fetchData")
-	public void verifyLogin(String userName, String password,String version, String LeftOperand, String comparision,String rightOperand, String literal) {
+	public void runPickSlip(String userName, String password,String version, String LeftOperand, String comparision,String rightOperand, String literal) {
 		new LoginPage()
 				.enterUsername(userName)
 				.enterPassword(password)
