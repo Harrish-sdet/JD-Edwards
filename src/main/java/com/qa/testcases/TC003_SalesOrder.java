@@ -18,7 +18,7 @@ public class TC003_SalesOrder extends ProjectSpecificMethods {
 	}
 
 	@Test(dataProvider = "fetchData")
-	public void verifyLogin(String userName, String password) {
+	public void runOrder(String userName, String password) {
 		new LoginPage()
 				.enterUsername(userName)
 				.enterPassword(password)
