@@ -18,7 +18,7 @@ public class TC002_InventorySummary extends ProjectSpecificMethods {
 	}
 
 	@Test(dataProvider = "fetchData")
-	public void verifyLogin(String userName, String password) {
+	public void runInventorySummary(String userName, String password) {
 		new LoginPage()
 				.enterUsername(userName)
 				.enterPassword(password)
