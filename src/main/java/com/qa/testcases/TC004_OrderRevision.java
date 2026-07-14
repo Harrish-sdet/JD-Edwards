@@ -18,7 +18,7 @@ public class TC004_OrderRevision extends ProjectSpecificMethods {
 	}
 
 	@Test(dataProvider = "fetchData")
-	public void verifyLogin(String userName, String password,String batch, String soldTo, String shipTo,String requestDate, String customerPO) {
+	public void runOrderRevision(String userName, String password,String batch, String soldTo, String shipTo,String requestDate, String customerPO) {
 		new LoginPage()
 				.enterUsername(userName)
 				.enterPassword(password)
