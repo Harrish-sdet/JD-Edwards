@@ -107,5 +107,17 @@ public class HomePage extends ProjectSpecificMethods {
 	 
 	 
 	
+
+public HomePage clickCrmSfaImageLink() {
+		click(locateElement(Locators.XPATH, "//table[normalize-space()='CRM/SFADocs WikieCommerce']"));
+		reportStep("Click Crm Sfa Image Link", "pass");
+		return this;
+	}
+
+public HomePage clickLeadsMenu() {
+		click(locateElement(Locators.XPATH, "//a[normalize-space()='Leads']"));
+		reportStep("Click Leads Menu", "pass");
+		return this;
+	}
 }
 
